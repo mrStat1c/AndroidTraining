@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidTraining</string>
+    <string name="the_list_will_be_hear">The list will be hear!</string>
+    <string name="vk_id">Введите id в Вконтакте</string>
+    <string name="search">Search!</string>
+    <string name="result_will_be_here">Result will be here!</string>
+
+    <string name="error_message">Erro while get response!</string>
+</resources>

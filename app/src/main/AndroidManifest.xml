@@ -47,6 +47,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".intentsApp2.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
+
+<!--  без этого intent.resolveActivity(getPackageManager()) возвращает null  -->
+<!--  см. src\main\java\com\example\androidtraining\intentsApp2\MainActivity.java  -->
+<!--  см. https://stackoverflow.com/questions/62535856/intent-resolveactivity-returns-null-in-api-30  -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+    </queries>
 
 </manifest>

@@ -6,4 +6,8 @@
     <string name="result_will_be_here">Result will be here!</string>
 
     <string name="error_message">Erro while get response!</string>
+
+    <string name="open_website">Open Website</string>
+    <string name="open_map">Open Location in Map</string>
+    <string name="open_your_own">Your own implicit intent</string>
 </resources>

@@ -1,4 +1,4 @@
-package com.example.androidtraining;
+package com.example.androidtraining.vk;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
@@ -10,7 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.androidtraining.utils.NetworkHelper;
+import com.example.androidtraining.R;
+import com.example.androidtraining.vk.utils.NetworkHelper;
 
 import org.json.JSONArray;
 import org.json.JSONException;

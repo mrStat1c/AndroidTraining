@@ -1,9 +1,11 @@
-package com.example.androidtraining;
+package com.example.androidtraining.pl;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.androidtraining.R;
 
 public class PlActivity extends AppCompatActivity {
 

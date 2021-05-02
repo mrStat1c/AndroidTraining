@@ -1,4 +1,4 @@
-package com.example.androidtraining.utils;
+package com.example.androidtraining.vk.utils;
 
 import android.net.Uri;
 

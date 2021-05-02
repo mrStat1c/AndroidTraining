@@ -1,10 +1,12 @@
-package com.example.androidtraining;
+package com.example.androidtraining.recycleView;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.androidtraining.R;
 
 public class RecycleViewActivity  extends AppCompatActivity {
 

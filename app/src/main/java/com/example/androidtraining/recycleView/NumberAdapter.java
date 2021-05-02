@@ -1,4 +1,4 @@
-package com.example.androidtraining;
+package com.example.androidtraining.recycleView;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.androidtraining.R;
 
 public class NumberAdapter extends RecyclerView.Adapter<NumberAdapter.NumberViewHolder> {
 

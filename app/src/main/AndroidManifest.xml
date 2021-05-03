@@ -56,7 +56,7 @@
         </activity>
     </application>
 
-<!--  без этого intent.resolveActivity(getPackageManager()) возвращает null  -->
+<!--  без этого в методе openWebPage() код intent.resolveActivity(getPackageManager()) возвращает null  -->
 <!--  см. src\main\java\com\example\androidtraining\intentsApp2\MainActivity.java  -->
 <!--  см. https://stackoverflow.com/questions/62535856/intent-resolveactivity-returns-null-in-api-30  -->
     <queries>
@@ -65,6 +65,11 @@
             <category android:name="android.intent.category.BROWSABLE" />
             <data android:scheme="https" />
         </intent>
+<!-- Следующий код для запуска камеры почему-то не работает -->
+        <!--        <intent>-->
+<!--            <action android:name="android.intent.action.STILL_IMAGE_CAMERA" />-->
+<!--            <category android:name="android.intent.category.DEFAULT" />-->
+<!--        </intent>-->
     </queries>
 
 </manifest>

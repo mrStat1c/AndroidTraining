@@ -3,6 +3,7 @@ package com.example.androidtraining.intentsApp2;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Toast;
 
@@ -39,9 +40,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    // TODO: Реализуйте свой собственный неявный Intent
-    public void yourOwnImplicitIntent(View view) {
-        Toast.makeText(this, "Ваш неявный Intent", Toast.LENGTH_SHORT).show();
+    public void onClickOpenCamera(View view) {
+       Intent intent = new Intent(MediaStore.INTENT_ACTION_STILL_IMAGE_CAMERA);
+// Условие почему-то не работает (возвращает null)
+       //        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+//        }
     }
 
     private void openWebPage(String url) {

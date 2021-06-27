@@ -87,6 +87,22 @@
         <activity android:name="com.example.androidtraining.startAndroidCourse.simpleActivityResult.NameActivity">
         </activity>
 
+        <!--  DataStorageActivity      -->
+        <activity android:name="com.example.androidtraining.startAndroidCourse.dataStoragePreferences.DataStorageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.androidtraining.startAndroidCourse.dataStorageSQLite.DataStorageSQLiteActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 <!--  без этого в методе openWebPage() код intent.resolveActivity(getPackageManager()) возвращает null  -->

@@ -74,6 +74,7 @@ public class DataStorageSQLiteActivity extends Activity implements View.OnClickL
                 Log.d(LOG_TAG, "--- Rows in mytable: ---");
                 // делаем запрос всех данных из таблицы mytable, получаем Cursor
                 Cursor c = db.query("mytable", null, null, null, null, null, null);
+                //есть еще rawQuery, в который можно передать sql - запрос
 
                 // ставим позицию курсора на первую строку выборки
                 // если в выборке нет строк, вернется false
@@ -134,3 +135,14 @@ public class DataStorageSQLiteActivity extends Activity implements View.OnClickL
     }
 
 }
+
+// ---------------  использование транзакции:
+// db.beginTransaction();
+// try {
+//  ...
+// db.setTransactionSuccessful();
+// Открытая транзакция лочит бд!
+
+//------------------ onUpgrade (для изменения бд) - вызывается, когда меняется версия у бд. Если приложение вызывается в первый раз, то вызовется onCreate,
+// т.е. в случае изменения структуры бд, нужно будет править и его
+//https://startandroid.ru/ru/uroki/vse-uroki-spiskom/79-urok-39-onupgrade-obnovljaem-bd-v-sqlite.html

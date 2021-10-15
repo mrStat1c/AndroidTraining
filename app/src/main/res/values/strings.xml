@@ -10,4 +10,23 @@
     <string name="open_website">Open Website</string>
     <string name="open_map">Open Location in Map</string>
     <string name="open_your_own">Your own implicit intent</string>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name_1">SimpleListChoice</string>
+    <string-array name="names">
+        <item>Иван</item>
+        <item>Марья</item>
+        <item>Петр</item>
+        <item>Антон</item>
+        <item>Даша</item>
+        <item>Борис</item>
+        <item>Костя</item>
+        <item>Игорь</item>
+        <item>Анна</item>
+        <item>Денис</item>
+        <item>Вадим</item>
+        <item>Ольга</item>
+        <item>Сергей</item>
+    </string-array>
+
 </resources>
